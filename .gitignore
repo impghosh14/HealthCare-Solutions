@@ -1,0 +1,53 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+.venv/
+venv/
+env/
+
+# IDEs / editors
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+*.env
+.env.*
+.envrc
+secrets/
+config/secrets.yaml
+
+# Airflow
+airflow/logs/
+airflow/tmp/
+airflow/dags/__pycache__/
+airflow/airflow.db
+airflow/airflow.cfg
+airflow/webserver_config.py
+
+# Docker
+*.pid
+docker/*.local.yml
+
+# Kubernetes
+k8s/generated/
+k8s/.kubeconfig
+
+# Data files
+sample_data/**/*.parquet
+sample_data/**/*.csv
+sample_data/**/*.xlsx
+sample_data/**/*.json
+
+# Snowflake credentials
+snowflake_credentials.json
+snowflake_profile.yml
