@@ -1,5 +1,5 @@
 {
-  "local_path": "/opt/airflow/app/sample_data/Doctor/HCS_DOCTOR_006.xlsx",
-  "s3_folder": "raw/doctor",
+  "local_path": "/opt/airflow/app/sample_data/Patient/HCS_PATIENT_0011.csv",
+  "s3_folder": "raw/patient",
   "s3_bucket": "healthcare-solutions-panchanan-ap-south-1"
 }
