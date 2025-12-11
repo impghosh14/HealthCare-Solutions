@@ -20,20 +20,20 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
-      _AIRFLOW_WWW_USER_USERNAME: admin
-      _AIRFLOW_WWW_USER_PASSWORD: Pp@12345
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+
+      _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME}
+      _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD}
+
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./src:/opt/airflow/app/src
       - ./sql:/opt/airflow/app/sql
-      - ./sample_data:/opt/airflow/app/sample_data    # <-- use your sample_data as "local" files
-      - ./:/opt/project
+      - ./sample_data:/opt/airflow/app/sample_data
+      - ./payload:/opt/airflow/app/payload
+
     command: >
-      bash -c "
-      airflow db init &&
-      airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin
-      "
+      bash -c "airflow db init && airflow users delete --username ${_AIRFLOW_WWW_USER_USERNAME} || true && airflow users create --username ${_AIRFLOW_WWW_USER_USERNAME} --firstname Admin --lastname User --role Admin --email admin@example.com --password ${_AIRFLOW_WWW_USER_PASSWORD}"
 
   airflow-webserver:
     build:
@@ -48,6 +48,7 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./src:/opt/airflow/app/src
@@ -66,11 +67,13 @@ services:
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres/airflow
+
     volumes:
       - ./airflow/dags:/opt/airflow/dags
       - ./src:/opt/airflow/app/src
       - ./sql:/opt/airflow/app/sql
       - ./sample_data:/opt/airflow/app/sample_data
+
     command: scheduler
 
 volumes:

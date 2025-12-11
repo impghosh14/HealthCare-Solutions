@@ -1,0 +1,5 @@
+{
+  "local_path": "/opt/airflow/app/sample_data/Disease/HCS_DISEASE_001.json",
+  "s3_bucket": "healthcare-solutions-panchanan-ap-south-1",
+  "s3_folder": "raw/disease"
+}
