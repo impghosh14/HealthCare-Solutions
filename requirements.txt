@@ -1,5 +1,9 @@
-boto3
-snowflake-connector-python
-python-dotenv
-pandas
-pyarrow
+# requirements.txt
+boto3>=1.26
+azure-storage-blob>=12.14.1
+google-cloud-storage>=2.11.0
+google-auth>=2.20.0
+python-dotenv>=1.0.0
+snowflake-connector-python>=3.0.0
+pandas>=2.0.0
+pyarrow>=12.0.0

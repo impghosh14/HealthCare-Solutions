@@ -1,0 +1,13 @@
+{
+  "job_name": "HCS_UPLOAD_AZURE_BLOB",
+  "description": "Upload a local file (inside container) to Azure Blob Storage with timestamped filename.",
+  "entry_dag": "HCS_UPLOAD_AZURE_BLOB",
+  "created_by": "your_name",
+  "created_at": "2025-12-12T00:00:00Z",
+  "payload_schema": {
+    "local_path": "string (absolute path visible inside Airflow container)",
+    "blob_dir": "string (optional subfolder inside the blob container)",
+    "container_name": "string (optional, overrides .env AZURE_CONTAINER)"
+  },
+  "notes": "Trigger via Airflow UI 'Trigger DAG' conf or via REST API passing same JSON."
+}

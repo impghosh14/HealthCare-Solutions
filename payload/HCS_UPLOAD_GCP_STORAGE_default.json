@@ -1,0 +1,5 @@
+{
+  "local_path": "/opt/airflow/app/sample_data/Disease/HCS_DISEASE_001.json",
+  "gcs_prefix": "raw/disease",
+  "bucket_name": "your-gcp-bucket-name"
+}

@@ -1,0 +1,9 @@
+{
+  "process_name": "HCS_UPLOAD_GCP_STORAGE_process",
+  "steps": [
+    { "step": 1, "type": "validate_payload" },
+    { "step": 2, "type": "validate_local_file" },
+    { "step": 3, "type": "upload_to_gcp_storage" },
+    { "step": 4, "type": "push_result" }
+  ]
+}

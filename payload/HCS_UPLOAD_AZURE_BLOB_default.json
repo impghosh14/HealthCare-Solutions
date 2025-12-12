@@ -1,0 +1,5 @@
+{
+  "local_path": "/opt/airflow/app/sample_data/Disease/HCS_DISEASE_001.json",
+  "blob_dir": "raw/disease",
+  "container_name": "hcs-azure-container"
+}
