@@ -1,0 +1,18 @@
+{
+  "active": true,
+  "ruleConfig": {
+    "ruleName": "EXT_BLOB_HCS_DISEASE",
+    "expression": [
+      "$filePath match {Regex((azure://raw/disease/.*))}"
+    ],
+    "eventList": [
+      { "eventName": "EXT_BLOB_HCS_DISEASE" }
+    ],
+    "action": [
+      {
+        "actionCategory": "start_file_interface",
+        "actionArgument": "{\"jobName\":\"EXT_BLOB_HCS_DISEASE\"}"
+      }
+    ]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "PROCESS": {
+    "NAME": "EXT_BLOB_HCS_DOCTOR",
+    "PROCESS_CATEGORY": "CORE_ETL",
+    "SOURCE": "AZURE_BLOB",
+    "TARGET": "SNOWFLAKE",
+    "STEPS": [
+      "BLOB_READ",
+      "FORMAT_DETECT",
+      "DOCTOR_TRANSFORM",
+      "SNOWFLAKE_WRITE",
+      "BLOB_MOVE_FILE"
+    ]
+  }
+}

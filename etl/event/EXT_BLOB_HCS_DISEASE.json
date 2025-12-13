@@ -1,0 +1,8 @@
+{
+  "eventConfig": {
+    "eventName": "EXT_BLOB_HCS_DISEASE",
+    "eventDescription": "Disease master ingestion",
+    "priority": 1
+  },
+  "active": true
+}

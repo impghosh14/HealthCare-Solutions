@@ -1,0 +1,5 @@
+{
+  "jobName": "EXT_GCP_HCS_PATIENT",
+  "entity": "patient",
+  "snowflake_table": "HCS_PATIENT_CORE"
+}

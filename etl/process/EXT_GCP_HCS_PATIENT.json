@@ -1,0 +1,15 @@
+{
+  "PROCESS": {
+    "NAME": "EXT_GCP_HCS_PATIENT",
+    "PROCESS_CATEGORY": "CORE_ETL",
+    "SOURCE": "GCP",
+    "TARGET": "SNOWFLAKE",
+    "STEPS": [
+      "GCP_READ",
+      "FORMAT_DETECT",
+      "PATIENT_TRANSFORM",
+      "SNOWFLAKE_WRITE",
+      "GCP_MOVE_FILE"
+    ]
+  }
+}

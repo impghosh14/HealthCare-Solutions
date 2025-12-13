@@ -1,0 +1,8 @@
+{
+  "eventConfig": {
+    "eventName": "EXT_GCP_HCS_PATIENT",
+    "eventDescription": "Patient master ingestion",
+    "priority": 1
+  },
+  "active": true
+}

@@ -1,0 +1,18 @@
+{
+  "active": true,
+  "ruleConfig": {
+    "ruleName": "EXT_GCP_HCS_DOCTOR",
+    "expression": [
+      "$filePath match {Regex((gs://raw/doctor/.*))}"
+    ],
+    "eventList": [
+      { "eventName": "EXT_GCP_HCS_DOCTOR" }
+    ],
+    "action": [
+      {
+        "actionCategory": "start_file_interface",
+        "actionArgument": "{\"jobName\":\"EXT_GCP_HCS_DOCTOR\"}"
+      }
+    ]
+  }
+}

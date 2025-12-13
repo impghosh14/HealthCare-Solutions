@@ -1,0 +1,18 @@
+{
+  "active": true,
+  "ruleConfig": {
+    "ruleName": "EXT_BLOB_HCS_PATIENT",
+    "expression": [
+      "$filePath match {Regex((azure://raw/patient/.*))}"
+    ],
+    "eventList": [
+      { "eventName": "EXT_BLOB_HCS_PATIENT" }
+    ],
+    "action": [
+      {
+        "actionCategory": "start_file_interface",
+        "actionArgument": "{\"jobName\":\"EXT_BLOB_HCS_PATIENT\"}"
+      }
+    ]
+  }
+}
