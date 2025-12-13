@@ -1,0 +1,13 @@
+{
+  "table": "HCS_PATIENT_CORE",
+  "columns": [
+    "patient_id","visit_id","name","sex","age","email","mobile",
+    "address","city","state","pincode","country",
+    "weight_kg","height_cm","bmi","bmi_category",
+    "bp_systolic","bp_diastolic","had_surgery","surgery_type",
+    "hemoglobin_g_dL","wbc_count_10^3_uL","rbc_count_10^6_uL",
+    "platelet_count_10^3_uL","neutrophils_percent","lymphocytes_percent",
+    "monocytes_percent","eosinophils_percent","basophils_percent",
+    "SOURCE_FILE","INGESTION_ID","INGESTION_TS"
+  ]
+}

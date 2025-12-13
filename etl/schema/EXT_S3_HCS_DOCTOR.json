@@ -1,0 +1,10 @@
+{
+  "table": "HCS_DOCTOR_CORE",
+  "columns": [
+    "Registration_Id","Name","Specialization","Email_Id","Mobile_Number",
+    "Address","Graduation_Year","Graduation_University_Name",
+    "MD_University_Name","Years_of_Experience","Qualification",
+    "Working_In","Surgery_Count","Off_Day",
+    "SOURCE_FILE","INGESTION_ID","INGESTION_TS"
+  ]
+}

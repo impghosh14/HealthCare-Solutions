@@ -1,0 +1,18 @@
+{
+  "active": true,
+  "ruleConfig": {
+    "ruleName": "EXT_S3_HCS_DISEASE",
+    "expression": [
+      "$filePath match {Regex((s3://healthcare-solutions-panchanan-ap-south-1/raw/disease/.*))}"
+    ],
+    "eventList": [
+      { "eventName": "EXT_S3_HCS_DISEASE" }
+    ],
+    "action": [
+      {
+        "actionCategory": "start_file_interface",
+        "actionArgument": "{\"jobName\":\"EXT_S3_HCS_DISEASE\"}"
+      }
+    ]
+  }
+}

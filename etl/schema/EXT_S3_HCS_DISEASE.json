@@ -1,0 +1,9 @@
+{
+  "table": "HCS_DISEASE_CORE",
+  "columns": [
+    "Disease_ID","Disease_Name","Lab_Parameter","Lab_Report_Parameter",
+    "Normal_Min","Normal_Max","Abnormal_Criteria","Reason",
+    "Recommended_Doctor_Specialization",
+    "SOURCE_FILE","INGESTION_ID","INGESTION_TS"
+  ]
+}

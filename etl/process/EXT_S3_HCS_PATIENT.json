@@ -1,0 +1,15 @@
+{
+  "PROCESS": {
+    "NAME": "EXT_S3_HCS_PATIENT",
+    "PROCESS_CATEGORY": "CORE_ETL",
+    "SOURCE": "AWS_S3",
+    "TARGET": "SNOWFLAKE",
+    "STEPS": [
+      "S3_READ",
+      "FORMAT_DETECT",
+      "PATIENT_TRANSFORM",
+      "SNOWFLAKE_WRITE",
+      "S3_MOVE_FILE"
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "eventConfig": {
+    "eventName": "EXT_S3_HCS_PATIENT",
+    "eventDescription": "Patient data ingestion",
+    "priority": 1
+  },
+  "active": true
+}

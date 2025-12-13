@@ -1,0 +1,5 @@
+{
+  "jobName": "EXT_S3_HCS_DOCTOR",
+  "entity": "doctor",
+  "snowflake_table": "HCS_DOCTOR_CORE"
+}
