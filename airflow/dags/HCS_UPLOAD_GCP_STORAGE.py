@@ -1,4 +1,3 @@
-# airflow/dags/HCS_UPLOAD_GCP_STORAGE.py
 from datetime import datetime
 import json
 import logging

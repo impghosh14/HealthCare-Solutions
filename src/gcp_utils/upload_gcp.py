@@ -1,4 +1,3 @@
-# src/gcp_utils/upload_gcp.py
 import os
 import time
 import logging

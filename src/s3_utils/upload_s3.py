@@ -1,4 +1,3 @@
-# src/s3_utils/upload_s3.py
 import os
 import time
 import logging

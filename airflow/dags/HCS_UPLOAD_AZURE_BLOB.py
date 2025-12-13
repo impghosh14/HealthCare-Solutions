@@ -1,4 +1,3 @@
-# airflow/dags/HCS_UPLOAD_AZURE_BLOB.py
 from datetime import datetime
 import json
 import logging

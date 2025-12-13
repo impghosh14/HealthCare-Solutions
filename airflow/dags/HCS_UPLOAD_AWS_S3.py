@@ -1,4 +1,3 @@
-# airflow/dags/HCS_UPLOAD_AWS_S3.py
 from datetime import datetime
 import json
 import logging
