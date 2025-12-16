@@ -100,9 +100,10 @@ Before installing and running the project, ensure you have the following:
 
 ### 1️⃣ Clone the Repository
 
+```bash
 git clone https://github.com/impghosh14/HealthCare-Solutions/tree/dev
 cd HealthCare-Solutions
-
+```
 
 
 2️⃣ Configure Environment Variables
@@ -119,16 +120,16 @@ Snowflake
 
 Example:
 
-
+```bash
 cp .env.example .env
-
+```
 
 ▶️ Executing the Program
 Start All Services (Airflow + Dependencies)
 
-
+```bash
 docker compose up --build
-
+```
 
 Access Apache Airflow UI
 
@@ -157,10 +158,10 @@ Data becomes ready for analytics and dashboards
 ❓ Help
 Common Issues & Solutions
 Airflow UI Not Opening
-
+```bash
 docker compose down
 docker compose up --build
-
+```
 
 DAG Not Visible
 
@@ -174,7 +175,7 @@ Verify credentials in .env
 
 Check IAM / access permissions for cloud storage
 
-
+```bash
 HEALTHCARE-SOLUTIONS
 │
 ├── airflow/
@@ -206,6 +207,7 @@ HEALTHCARE-SOLUTIONS
 ├── README.md
 └── .gitignore
 
+```
 
 👨‍💻 Authors
 
