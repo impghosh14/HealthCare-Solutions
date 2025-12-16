@@ -100,9 +100,8 @@ Before installing and running the project, ensure you have the following:
 
 ### 1️⃣ Clone the Repository
 
-```bash
-git clone https://github.com/your-username/healthcare-solutions.git
-cd healthcare-solutions
+git clone https://github.com/impghosh14/HealthCare-Solutions/tree/dev
+cd HealthCare-Solutions
 
 
 
